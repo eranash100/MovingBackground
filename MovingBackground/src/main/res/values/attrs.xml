@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MovingBackground">
+        <attr name="image_source" format="reference"/>
+        <attr name="number_of_images" format="integer"/>
+        <attr name="minImageScale" format="integer"/>
+        <attr name="maxImageScale" format="integer"/>
+        <attr name="minDurationInMillis" format="integer"/>
+        <attr name="maxDurationInMillis" format="integer"/>
+        <attr name="minDelayInMillis" format="integer"/>
+        <attr name="maxDelayInMillis" format="integer"/>
+    </declare-styleable>
+</resources>
