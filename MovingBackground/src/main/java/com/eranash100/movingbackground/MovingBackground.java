@@ -39,6 +39,7 @@ public class MovingBackground extends View
     {
         super(context);
         init(null);
+        //Eran
     }
 
     public MovingBackground(Context context, @Nullable AttributeSet attrs)
