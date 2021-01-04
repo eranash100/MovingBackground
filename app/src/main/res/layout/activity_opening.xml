@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_2"
+    tools:context=".MainActivity">
+
+<!--    <com.example.mymovingbackgroundobject.MovingBackground-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:number_of_images="7"-->
+<!--        app:minImageScale="60"-->
+<!--        app:maxImageScale="80"-->
+<!--        app:image_source="@drawable/cuted_w_logo_with_shadow"-->
+<!--        app:minDurationInMillis="8000"-->
+<!--        app:maxDurationInMillis="12000"-->
+<!--        app:minDelayInMillis="3000"-->
+<!--        app:maxDelayInMillis="10000"-->
+<!--        app:blendMode="OVERLAY"/>-->
+
+    <ImageView
+        android:id="@+id/titleImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toStartOf="@+id/titleEndGuideLine"
+        app:layout_constraintStart_toStartOf="@+id/titleStartGuideLine"
+        app:layout_constraintTop_toTopOf="@+id/titleTopGuidLine"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/survivalwar_logo" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_unclicked"
+        app:layout_constraintBottom_toTopOf="@+id/registerBtn"
+        app:layout_constraintDimensionRatio="w,143:55"
+        app:layout_constraintEnd_toStartOf="@+id/buttonsEndGuideLine"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/buttonsStartGuideLine" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/register_button_unclicked"
+        app:layout_constraintDimensionRatio="w,143:55"
+        app:layout_constraintBottom_toTopOf="@+id/buttonsBottomGuidLine"
+        app:layout_constraintEnd_toStartOf="@+id/buttonsEndGuideLine"
+        app:layout_constraintStart_toStartOf="@+id/buttonsStartGuideLine" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/buttonsBottomGuidLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleTopGuidLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleStartGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleEndGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/buttonsStartGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/buttonsEndGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

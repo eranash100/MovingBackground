@@ -1,0 +1,4 @@
+include ':MovingBackgroundLib'
+include ':MovingBackground'
+include ':app'
+rootProject.name = "MyMovingBackgroundObject"
